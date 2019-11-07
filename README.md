@@ -1,1 +1,1 @@
-"# Hiking-Website-" 
+SWEN 101 - Hiking Website 
