@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BetterTrails
+</title><style>
+body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1   {color: rgb(144, 197, 144);
+      font-family: Times New Roman;
+      text-align:center;
+      }
+
+h2   {color: rgb(144, 197, 144);
+      font-family: Times New Roman;
+      text-align: justify;
+      }
+
+p    {color: Black;
+      font-family: Times New Roman;
+      padding: 30px;
+      text-align: justify;
+      background-color: white;
+      box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+      font-size: 14px;
+      }
+dt   {color: white
+}
+dd   {color: white}
+      
+</style>
+</head>
+<body>
+<h1>BetterTrails
+</h1>
+<hr/>
+<p align="center"><a href="home.html">Home</a>---<a href="help.html">Maps</a>---
+</p>
+<h2>Welcome to BetterTrails!
+</h2>
+
+<p>BetterTrails is a site dedicated to helping the adventurous outdoors-men and women
+find their next favorite hiking trail! 
+</p>
+
+<img class="mySlides" src="trails_images/hiking.jpg" alt="hiking" height="500" width="750">>
+<img class="mySlides" src="trails_images/ravine.jpg" alt="ravine" height="500" width="750">>
+<img class="mySlides" src="trails_images/tent.jpg" alt="tent" height="500" width="750">>
+
+<div class="w3-content w3-display-container">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+
+<h2>Bound by the Road
+</h2>
+
+<p>At its core, BetterTrails is a community based platform. 
+  BetterTrails was initially created by a group of likeminded individuals who were
+  interested in getting out and seeing some more of the world. The only problem we found
+  was that the world was sometimes a little hard to navigate. So, we decided to band together
+  and help ourselves and the rest of the outdoors community do more of what they love
+  and help others do the same. With BetterTrails you can find and make some of the following
+  content listed below.
+
+
+</p>
+<dl>
+    <dt>Maps</dt>
+    <dd>Discuss, rate and make a trail map. Google maps support
+      soon to be implemented too, helping others find their way to
+      your favorite spots!
+      </dd>
+    <dt>Events</dt>
+    <dd>With an upcoming social system, BetterTrails will
+      be working with organizations recognized the world over to
+      help you and others host trail cleanup and nature aid events.
+      Soon, you and your friends will be able to make that poorly managed
+      trail you've always loved become a beautiful new landmark, or
+      sign up to help other events in your own local community!
+    </dd>
+    <dt>User Profiles</dt>
+    <dd>As part of the upcoming social system update, BetterTrails is implementing
+      one of the most unique and fun-oriented social systems on the market!
+      Discuss and show off your gear, rise up the ranks by completing more
+      difficult trails, and get unique badges to show off your various accomplishments!
+      Whether you're an avid hiker, more into the cleanup of your community or
+      just looking for some occasional walking in a peaceful place, your profile
+      will make it that much more fun!
+    </dd>
+    </dl>
+  
+<h2>Heading
+</h2>
+
+<p>Paragraph
+
+</p>
+
+</body>
+</html>
