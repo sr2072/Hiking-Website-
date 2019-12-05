@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BetterTrails
+</title>
+<head>
+    <style>
+    body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    h1   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align:center;
+        }
+
+    h2   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align: justify;
+        }
+
+    p    {color: Black;
+        font-family: Times New Roman;
+        padding: 30px;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+        font-size: 14px;
+        }
+    dt   {color: white
+    }
+    dd   {color: white}
+
+    #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+    .column {
+        float: left;
+        width: 50%;
+        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+</head>
+
+
+<body>
+<h1>BetterTrails
+    </h1>
+    <hr/>
+    <p align="center"><a href="home.html">Home</a>---<a href="maps.html">Maps</a>---
+    </p>
+
+
+<h2>
+Grand Canyon
+</h2>
+<p>
+Rating: 4.8/5
+<br>Address: Arizona
+</p>
+
+<h2>
+Images:
+</h2>
+
+<img class="mySlides" src="trails_images/grand_canyon.jpg" alt="hiking" height="300" width="400">>
+<img class="mySlides" src="trails_images/grand_canyon2.jpg" alt="ravine" height="300" width="400">>
+<img class="mySlides" src="trails_images/grand_canyon3.jpg" alt="tent" height="300" width="400">>
+
+<div class="w3-content w3-display-container">
+    <button class="w3-button w3-black w3-display-left" 
+    onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" 
+    onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+
+<p 
+See this map in google here:
+<br><a href="https://www.google.com/maps/place/Grand+Canyon+National+Park/@36.1069652,-112.1129972,9z/data=!4m5!3m4!1s0x0:0x1f38a9bec9912029!8m2!3d36.1069652!4d-112.1129972">
+    Google Maps View</a>
+</p>

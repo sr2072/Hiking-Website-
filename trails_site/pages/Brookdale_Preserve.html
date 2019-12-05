@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BetterTrails
+</title>
+<head>
+    <style>
+    body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    h1   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align:center;
+        }
+
+    h2   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align: justify;
+        }
+
+    p    {color: Black;
+        font-family: Times New Roman;
+        padding: 30px;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+        font-size: 14px;
+        }
+    dt   {color: white
+    }
+    dd   {color: white}
+
+    #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+    .column {
+        float: left;
+        width: 50%;
+        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+</head>
+
+
+<body>
+<h1>BetterTrails
+    </h1>
+    <hr/>
+    <p align="center"><a href="home.html">Home</a>---<a href="maps.html">Maps</a>---
+    </p>
+
+
+<h2>
+Brookdale Preserve
+</h2>
+<p>
+Rating: 4.1/5
+<br>Address: 30 Brook Rd, Rochester, NY 14623
+</p>
+
+<h2>
+Images:
+</h2>
+
+<img class="mySlides" src="trails_images/brookdale_preserve.jpg" alt="hiking" height="300" width="400">>
+<img class="mySlides" src="trails_images/brookdale_preserve2.jpg" alt="ravine" height="300" width="400">>
+<img class="mySlides" src="trails_images/brookdale_preserve3.jpg" alt="tent" height="300" width="400">>
+
+<div class="w3-content w3-display-container">
+    <button class="w3-button w3-black w3-display-left" 
+    onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" 
+    onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+
+<p 
+See this map in google here:
+<br><a href="https://www.google.com/maps/place/Brookdale+Preserve/@43.0774103,-77.7093113,15z/data=!4m5!3m4!1s0x0:0x4cb474ee9eb76d8f!8m2!3d43.0774103!4d-77.7093113">
+    Google Maps View</a>
+</p>
