@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BetterTrails
+</title>
+<head>
+    <style>
+    body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+* {box-sizing: border-box;}
+    body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    h1   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align:center;
+        }
+
+    h2   {color: rgb(144, 197, 144);
+        font-family: Times New Roman;
+        text-align: justify;
+        }
+
+    p    {color: Black;
+        font-family: Times New Roman;
+        padding: 30px;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+        font-size: 14px;
+        }
+    dt   {color: white
+    }
+    dd   {color: white}
+
+    #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+    .column {
+        float: left;
+        width: 50%;
+        }
+    .left, .right {
+        width: 45%
+    }
+    .middle {
+        width: 10%
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: green;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid brown;  
+  }
+}
+    </style>
+</head>
+
+
+<body>
+<h1>BetterTrails
+    </h1>
+    <hr/>
+    <div class="topnav">
+            <a class="active" href="home.html">Home</a>
+            <a href="maps.html">Maps</a>
+            <a href="help.html">Help</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            </div>
+
+
+<h2>
+Grand Canyon
+</h2>
+<p>
+Rating: 4.8/5
+<br>Address: Arizona
+</p>
+
+<h2>
+Images:
+</h2>
+
+<img class="mySlides" src="trails_images/grand_canyon.jpg" alt="hiking" height="300" width="400">>
+<img class="mySlides" src="trails_images/grand_canyon2.jpg" alt="ravine" height="300" width="400">>
+<img class="mySlides" src="trails_images/grand_canyon3.jpg" alt="tent" height="300" width="400">>
+
+<div class="w3-content w3-display-container">
+    <button class="w3-button w3-black w3-display-left" 
+    onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" 
+    onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+
+<p 
+See this map in google here:
+<br><a href="https://www.google.com/maps/place/Grand+Canyon+National+Park/@36.1069652,-112.1129972,9z/data=!4m5!3m4!1s0x0:0x1f38a9bec9912029!8m2!3d36.1069652!4d-112.1129972">
+    Google Maps View</a>
+</p>
