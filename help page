@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help
+</title>
+<style>
+body {background-image: linear-gradient(180deg, green, rgb(204, 96, 53));}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1   {color: rgb(144, 197, 144);
+      font-family: Times New Roman;
+      text-align:center;
+      }
+h2   {color: rgb(144, 197, 144);
+      font-family: Times New Roman;
+      text-align: justify;
+      }
+p    {color: Black;
+      font-family: Times New Roman;
+      padding: 30px;
+      text-align: justify;
+      background-color: white;
+      box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+      font-size: 14px;
+      }
+dt   {color: white
+}
+dd   {color: white}
+
+list ul {
+    display:inline;
+    padding:0px;
+    float:left;
+}
+
+list ul li {
+    display:inline-block;
+    list-style-type:none;
+    color:white;
+    float:left;
+    margin-left:10px;
+}
+
+
+
+
+.X_selection:{
+    background-color:blue;
+    padding:30px 20px 7px 10px;
+}
+
+
+.image {
+    
+    background-image: url('https://images.unsplash.com/photo-1424169292451-7c28a6053189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+    background-repeat: no-repeat;
+    height:1%;
+    background-size:cover;
+}
+
+
+
+}
+
+</style>
+</head>
+<body>
+<h1>BetterTrails
+</h1>
+<hr/>
+    <list>
+        <ul id = "tabs">
+            <li><a class ="X_selection"  href = "index.html">HOME</a></li>
+            <li><a class ="X_selection" href = "map.html">MAP</a></li>
+              <li><a  class ="X_selection"href = "help.html">HELP</a></li>
+        </ul>
+    </list>
+</div>
+<br>
+<h1>
+THE HELP PAGE
+</h1>
+<h2> Hello</h2>
+<p> This is the help page</p>
+</body>
+
